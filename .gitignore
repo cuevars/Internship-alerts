@@ -1,0 +1,8 @@
+__pycache__/
+.venv/
+.env
+live-feed.json
+state.json
+matches.html
+*.tmp
+preview.txt

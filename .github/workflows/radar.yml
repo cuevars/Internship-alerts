@@ -1,0 +1,50 @@
+name: Internship Radar
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: internship-radar
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tests
+        run: python -m unittest discover -s tests -v
+      - name: Find and notify
+        id: radar
+        continue-on-error: true
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+          NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+        run: python radar.py
+      - name: Save delivered IDs even after a partial notification failure
+        if: always() && steps.radar.outcome != 'skipped'
+        run: |
+          if [ -f state.json ]; then
+            git config user.name "internship-radar[bot]"
+            git config user.email "internship-radar@users.noreply.github.com"
+            git add -f state.json
+            if ! git diff --cached --quiet; then
+              git commit -m "Update internship alert history"
+              git push
+            fi
+          fi
+      - name: Upload shortlist
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: internship-shortlist
+          path: matches.html
+          if-no-files-found: ignore
+      - name: Report scan failure
+        if: steps.radar.outcome == 'failure'
+        run: exit 1

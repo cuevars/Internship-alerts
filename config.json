@@ -1,0 +1,9 @@
+{
+  "feed_url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
+  "terms": ["Summer 2027"],
+  "include_remote": true,
+  "location_pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island|Long Island|New Jersey|Pennsylvania)\\b|\\bNew York,\\s*NY\\b|,\\s*(NJ|PA)\\b",
+  "role_pattern": "\\b(cyber\\w*|security|infosec|IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|data|analytics|business intelligence|software|developer|programmer|engineering|technology|QA|quality assurance|machine learning|AI)\\b",
+  "exclude_pattern": "\\b(PhD|Ph\\.D|MBA|postdoctoral|senior|staff|principal)\\b",
+  "max_alerts_per_run": 15
+}
