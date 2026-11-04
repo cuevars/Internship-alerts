@@ -16,6 +16,8 @@ def listing(**updates):
                 locations=['Newark, NJ'], terms=['Summer 2027'], active=True,
                 degrees=["Bachelor's"], url='https://example.com/job')
     row.update(updates)
+    if 'url' not in updates:
+        row['url'] = 'https://example.com/job/' + row['id']
     return row
 
 
@@ -103,6 +105,7 @@ class RadarTests(unittest.TestCase):
             feed = root / 'feed.json'
             second = listing()
             second['id'] = '2'
+            second['url'] = 'https://example.com/job/2'
             feed.write_text(json.dumps([listing(), second]))
             args = argparse.Namespace(config=str(Path(__file__).resolve().parents[1] / 'config.json'),
                 fixture=str(feed), report=str(root/'matches.html'), state=str(root/'state.json'),
@@ -110,7 +113,7 @@ class RadarTests(unittest.TestCase):
             with patch.dict(os.environ, {'NTFY_TOPIC': 'test-topic-12345'}), patch('radar.notify', side_effect=[None, OSError('offline')]):
                 with self.assertRaises(OSError):
                     radar.run(args)
-            self.assertEqual(radar.read_json(root/'state.json')['seen'], ['1'])
+            self.assertEqual(radar.read_json(root/'state.json')['seen'], ['1', 'url:https://example.com/job/1'])
             with patch.dict(os.environ, {'NTFY_TOPIC': 'test-topic-12345'}), patch('radar.notify') as notify:
                 radar.run(args)
                 self.assertEqual(notify.call_count, 1)

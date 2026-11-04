@@ -2,6 +2,18 @@
 
 Phone alerts for an NYIT CS sophomore seeking Summer 2027 cybersecurity, IT, data/analytics and other tech internships in NYC, New Jersey, Pennsylvania, or remote. Uses the public SimplifyJobs Summer2027 feed. No Python packages required; Python 3.11+.
 
+## Direct employer sources
+
+See [the broadened search plan](codex-internship-search-config.md) for the full supplied company seed list, proposed expansion, and an explanation of the 30-minute schedule. That document distinguishes currently connected sources from future targets; adding a company name to Markdown does not activate it.
+
+The radar now checks **The Hershey Company**, **Duolingo**, and **Viking Global Investors** directly, alongside Simplify. Hershey uses its public internship-category pages with pagination. Duolingo and Viking use their employer-specific public Greenhouse recruiting feeds. Set `enabled: false` on an `employer_sources` entry in `config.json` to disable it. To add another Greenhouse employer, supply its verified public board URL, `name`, `company`, and `type: "greenhouse"`. Other platforms need a new adapter; arbitrary career-page URLs are not supported.
+
+Direct feeds include only titles containing Intern/Internship or Co-op. Existing role, location, exclusion and scoring rules still apply. Dates are read conservatively from titles: descriptions often contain graduation dates. `include_unspecified_employer_terms: true` permits titles with no dates or only the target year, clearly labeled as unspecified. Other explicit seasons and years are excluded. Set it to false to require an explicit Summer 2027 title. Eligibility still needs manual review.
+
+Source status appears in logs and the HTML report. A failed source does not stop healthy sources from alerting, but the run ultimately fails visibly in Actions and retries next schedule. Matching application URLs are deduplicated across sources, ignoring common tracking parameters; different URLs for the same role can still duplicate. Existing listing history remains usable. No new secrets, dependencies or workflow arguments are required. Include `sources.py` when uploading the updated project. `--fixture` remains offline.
+
+Sources: [Hershey internships](https://careers.thehersheycompany.com/go/Interns/9002600/), [Duolingo careers](https://careers.duolingo.com/), [Viking postings](https://job-boards.greenhouse.io/vikingglobalinvestors).
+
 ## Try it now
 
 ```powershell

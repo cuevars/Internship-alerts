@@ -1,6 +1,12 @@
 {
   "feed_url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
   "terms": ["Summer 2027"],
+  "include_unspecified_employer_terms": true,
+  "employer_sources": [
+    {"name": "Hershey", "type": "hershey", "company": "The Hershey Company", "url": "https://careers.thehersheycompany.com/go/Interns/9002600/", "max_pages": 20},
+    {"name": "Duolingo", "type": "greenhouse", "company": "Duolingo", "url": "https://boards-api.greenhouse.io/v1/boards/duolingo/jobs?content=true"},
+    {"name": "Viking", "type": "greenhouse", "company": "Viking Global Investors", "url": "https://boards-api.greenhouse.io/v1/boards/vikingglobalinvestors/jobs?content=true"}
+  ],
   "include_remote": true,
   "location_pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island|Long Island|New Jersey|Pennsylvania)\\b|\\bNew York,\\s*NY\\b|,\\s*(NJ|PA)\\b",
   "role_pattern": "\\b(cyber\\w*|security|infosec|IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|data|analytics|business intelligence|software|developer|programmer|engineering|technology|QA|quality assurance|machine learning|AI)\\b",

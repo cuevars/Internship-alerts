@@ -6,3 +6,5 @@ state.json
 matches.html
 *.tmp
 preview.txt
+*-probe.html
+*-probe.json
