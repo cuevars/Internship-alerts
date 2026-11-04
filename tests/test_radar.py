@@ -1,4 +1,5 @@
 import argparse
+import copy
 import json
 import os
 from pathlib import Path
@@ -11,12 +12,67 @@ CONFIG = radar.read_json(Path(__file__).resolve().parents[1] / 'config.json')
 
 
 def listing(**updates):
-    return dict(id='1', title='Cybersecurity Intern', company_name='Example',
+    row = dict(id='1', title='Cybersecurity Intern', company_name='Example',
                 locations=['Newark, NJ'], terms=['Summer 2027'], active=True,
-                degrees=["Bachelor's"], url='https://example.com/job', **updates)
+                degrees=["Bachelor's"], url='https://example.com/job')
+    row.update(updates)
+    return row
 
 
 class RadarTests(unittest.TestCase):
+    def test_weighted_scoring_and_threshold(self):
+        cases = [
+            ('Cybersecurity Intern', ['NYC'], 5, True),
+            ('Cybersecurity Intern', ['Remote'], 4, True),
+            ('IT Intern', ['Remote'], 3, True),
+            ('Software Intern', ['Remote'], 2, False),
+            ('Data Analyst Intern', ['Philadelphia, PA'], 3, True),
+        ]
+        for title, locations, expected, accepted in cases:
+            with self.subTest(title=title, locations=locations):
+                row = listing(title=title, locations=locations)
+                self.assertEqual(radar.score_listing(row, CONFIG)[0], expected)
+                self.assertEqual(bool(radar.select([row], CONFIG)), accepted)
+
+    def test_rules_count_once_case_insensitive(self):
+        row = listing(title='CYBERSECURITY Security Intern', locations=['NYC', 'NYC', 'Remote'])
+        self.assertEqual(radar.score_listing(row, CONFIG)[0], 6)
+
+    def test_configurable_threshold_and_weights(self):
+        config = copy.deepcopy(CONFIG)
+        config['scoring']['minimum_score'] = 5
+        self.assertEqual(radar.select([listing()], config), [])
+        config['scoring']['rules'][0]['points'] = 5
+        self.assertEqual(radar.select([listing()], config)[0]['score'], 6)
+
+    def test_high_score_cannot_override_exclusions(self):
+        for updates in [dict(active=False), dict(is_visible=False), dict(terms=['Summer 2026']),
+                        dict(degrees=["Master's"]), dict(title='Senior Cybersecurity Intern'),
+                        dict(url='javascript:alert(1)'), dict(locations=['Boston, MA'])]:
+            self.assertEqual(radar.select([listing(**updates)], CONFIG), [])
+
+    def test_remote_toggle(self):
+        config = copy.deepcopy(CONFIG)
+        config['include_remote'] = False
+        self.assertEqual(radar.select([listing(locations=['Remote'])], config), [])
+
+    def test_resume_recommendations(self):
+        for title, resume in [('SOC Intern', 'Cybersecurity'), ('Cybersecurity Data Analyst', 'Cybersecurity'),
+                              ('Data Analyst Intern', 'Data'), ('IT Intern', 'IT'), ('Software Intern', 'IT')]:
+            self.assertEqual(radar.resume_for(title), resume)
+
+    def test_notification_score_and_resume_at_top(self):
+        row = radar.select([listing()], CONFIG)[0]
+        title, body, url = radar.notification_payload(row)
+        self.assertTrue(title.startswith('Score 4 |'))
+        self.assertEqual(body.splitlines()[0], 'Score: 4 | Use resume: Cybersecurity')
+        self.assertEqual(url, row['url'])
+
+    def test_ranking_and_deduplication(self):
+        lower = listing(id='low', locations=['Remote'], date_posted=999)
+        higher = listing(id='high', locations=['NYC'], date_posted=1)
+        self.assertEqual([r['id'] for r in radar.select([lower, higher, higher], CONFIG)], ['high', 'low'])
+
     def test_geography(self):
         for location in ['New York, NY', 'NYC', 'Philadelphia, PA', 'Pittsburgh, PA', 'Jersey City, NJ', 'Remote in USA']:
             row = listing()

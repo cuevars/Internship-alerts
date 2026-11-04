@@ -5,5 +5,17 @@
   "location_pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island|Long Island|New Jersey|Pennsylvania)\\b|\\bNew York,\\s*NY\\b|,\\s*(NJ|PA)\\b",
   "role_pattern": "\\b(cyber\\w*|security|infosec|IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|data|analytics|business intelligence|software|developer|programmer|engineering|technology|QA|quality assurance|machine learning|AI)\\b",
   "exclude_pattern": "\\b(PhD|Ph\\.D|MBA|postdoctoral|senior|staff|principal)\\b",
-  "max_alerts_per_run": 15
+  "max_alerts_per_run": 15,
+  "scoring": {
+    "minimum_score": 3,
+    "rules": [
+      {"name": "Cybersecurity", "field": "title", "pattern": "\\b(cyber\\w*|security|infosec|threat|SOC)\\b", "points": 3},
+      {"name": "IT", "field": "title", "pattern": "\\b(IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|technology)\\b", "points": 2},
+      {"name": "Data", "field": "title", "pattern": "\\b(data|analyst|analytics|business intelligence|machine learning)\\b", "points": 2},
+      {"name": "Other tech", "field": "title", "pattern": "\\b(software|developer|programmer|engineering|QA|quality assurance|AI)\\b", "points": 1},
+      {"name": "NYC", "field": "locations", "pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island)\\b|\\bNew York,\\s*NY\\b", "points": 2},
+      {"name": "NJ / PA / Long Island", "field": "locations", "pattern": "\\b(New Jersey|Pennsylvania|Long Island)\\b|,\\s*(NJ|PA)\\b", "points": 1},
+      {"name": "Remote", "field": "locations", "pattern": "\\bremote\\b", "points": 1}
+    ]
+  }
 }

@@ -41,6 +41,36 @@ GUIDANCE = {
 }
 
 
+def score_listing(row, config):
+    """Each configured rule contributes at most once, regardless of repetitions."""
+    score = 0
+    reasons = []
+    for rule in config['scoring']['rules']:
+        field = rule['field']
+        if field not in ('title', 'locations'):
+            raise ValueError('Scoring field must be title or locations')
+        text = row['title'] if field == 'title' else '; '.join(map(str, row['locations']))
+        if re.search(rule['pattern'], text, re.I):
+            score += rule['points']
+            reasons.append(rule['name'])
+    return score, reasons
+
+
+def resume_for(title):
+    category = track(title)
+    return category if category in ('Cybersecurity', 'Data') else 'IT'
+
+
+def notification_payload(row):
+    title = f'Score {row["score"]} | New {row["track"]} internship'
+    body = (f'Score: {row["score"]} | Use resume: {row["resume"]}\n'
+            f'{row["company_name"]} — {row["title"]}\n'
+            f'{"; ".join(row["locations"])}\n'
+            f'Matched: {", ".join(row["score_reasons"])}\n'
+            f'{GUIDANCE[row["track"]]}\nSophomore eligibility: check posting.\n{row["url"]}')
+    return title, body, row['url']
+
+
 def select(raw, config):
     if not isinstance(raw, list) or not raw:
         raise ValueError("Feed must be a nonempty list; refusing to replace the current shortlist")
@@ -68,16 +98,19 @@ def select(raw, config):
         remote = config["include_remote"] and re.search(r"\bremote\b", locations, re.I)
         if not (local or remote) or urlsplit(str(row["url"])).scheme != "https":
             continue
-        item = dict(row, track=track(title))
+        score, reasons = score_listing(row, config)
+        if score < config['scoring']['minimum_score']:
+            continue
+        item = dict(row, track=track(title), score=score, score_reasons=reasons, resume=resume_for(title))
         matches[str(row["id"])] = item
-    return sorted(matches.values(), key=lambda r: str(r.get("date_posted", 0)), reverse=True)
+    return sorted(matches.values(), key=lambda r: (r['score'], str(r.get("date_posted", 0))), reverse=True)
 
 
 def report(rows, path):
     esc = lambda value: html.escape(str(value), quote=True)
     cards = []
     for row in rows:
-        cards.append(f'<article><small>{esc(row["track"])}</small><h2>{esc(row["title"])}</h2>'
+        cards.append(f'<article><small>Score {esc(row["score"])} · Use resume: {esc(row["resume"])} · {esc(row["track"])}</small><h2>{esc(row["title"])}</h2>'
                      f'<p>{esc(row["company_name"])} · {esc("; ".join(row["locations"]))}</p>'
                      f'<p>{esc(GUIDANCE[row["track"]])}</p><p>Check graduation year, work authorization, dates and location restrictions in the posting.</p>'
                      f'<a href="{esc(row["url"])}" rel="noopener noreferrer">View posting / apply →</a></article>')
@@ -112,7 +145,7 @@ def run(args):
     raw = read_json(args.fixture) if args.fixture else json.loads(request(config["feed_url"]))
     rows = select(raw, config)
     for row in rows:
-        print(f'{row["company_name"]} | {row["title"]} | {"; ".join(row["locations"])}\n{row["url"]}')
+        print(f'Score {row["score"]} | Resume: {row["resume"]} | {row["company_name"]} | {row["title"]} | {"; ".join(row["locations"])}\n{row["url"]}')
     print(f"{len(rows)} current matches")
     if args.dry_run:
         return
@@ -135,8 +168,7 @@ def run(args):
         if limit < 1:
             raise ValueError("max_alerts_per_run must be positive")
         for row in [r for r in rows if str(r["id"]) not in seen][:limit]:
-            body = f'{row["company_name"]} — {row["title"]}\n{"; ".join(row["locations"])}\n{GUIDANCE[row["track"]]}\nSophomore eligibility: check posting.\n{row["url"]}'
-            notify("New " + row["track"] + " internship", body, row["url"])
+            notify(*notification_payload(row))
             seen.add(str(row["id"]))
             save_state(state_path, seen)
     save_state(state_path, seen)

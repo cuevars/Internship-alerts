@@ -34,6 +34,14 @@ Alert history is stored as `state.json` and committed by the workflow. Do not de
 
 ## Your résumé workflow
 
+### Weighted matching
+
+Edit `scoring.minimum_score` (default **3**) and `scoring.rules` in `config.json`. Each rule specifies a name, `title` or `locations` field, case-insensitive regex pattern, and points. Each matching rule contributes once, even if several locations or repeated keywords match. Different rules add together. Defaults give Cybersecurity +3, IT +2, Data +2, other tech +1, NYC +2, NJ/PA/Long Island +1, and Remote +1. For example, Cybersecurity in NYC scores 5; IT remote scores 3; software remote scores 2 and does not alert. Eligible jobs sort by score first, then posting date. Exclusions and the existing geographic/term/undergraduate scope remain mandatory regardless of score.
+
+The notification title and first body line show the final score. The first body line also recommends **Cybersecurity**, **Data**, or **IT** résumé from the job title. Cybersecurity takes precedence over Data for overlapping titles; other technology/software roles use IT as the closest of your three versions. Review and tailor that version to the posting. The HTML shortlist and console output also show the score and recommended résumé.
+
+No new workflow arguments, dependencies, or secrets are required: the existing `python radar.py` command reads scoring directly from `config.json`. Keep the existing `NTFY_TOPIC` and optional `NTFY_TOKEN` secrets. Upload `radar.py`, `config.json`, `tests/test_radar.py`, and this README together. Previously delivered IDs remain seen after scoring changes; existing eligible unseen jobs can alert on the next run, subject to the per-run limit.
+
 Keep your master résumé and three versions (Cybersecurity, IT, Data) in Files, OneDrive or Google Drive on your phone. Each alert includes a role category, a relevant tailoring reminder, and the posting link. Open the posting, verify sophomore/graduation-year eligibility, work authorization, dates, and commute. Duplicate the closest résumé version, adjust your summary/skills/project bullets using truthful relevant experience, export a PDF such as `First_Last_Company.pdf`, then upload it in the employer's application. Record the job link, application date and résumé filename in your own tracker. The radar does not need access to your résumé to send alerts.
 
 The feed does not reliably provide sophomore eligibility or full job descriptions. Track guidance is a starting point based on the title, not an AI review of the posting. The tool does not tailor or submit applications automatically. Feed coverage is incomplete and updates can lag employer websites; retain native job-board alerts for broader coverage. Degree filters exclude explicitly graduate-only entries but cannot guarantee eligibility. This version alerts on new IDs, not changes to an existing listing.
