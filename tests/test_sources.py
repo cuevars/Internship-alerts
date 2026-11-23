@@ -8,6 +8,18 @@ from test_radar import CONFIG, listing
 
 
 class SourceTests(unittest.TestCase):
+    def test_distinct_query_job_ids_are_not_collapsed(self):
+        first = listing(id='one', url='https://www.mongodb.com/careers/job/?gh_jid=111')
+        second = listing(id='two', url='https://www.mongodb.com/careers/job/?gh_jid=222')
+        self.assertEqual(len(radar.select([first, second], CONFIG)), 2)
+        self.assertEqual(sources.canonical_url('https://example.com/jobs/111?gh_jid=111'), 'https://example.com/jobs/111')
+
+    def test_employer_https_upgrade_is_opt_in(self):
+        source = dict(name='Example', company='Example', url='https://example.com/api', force_https=True)
+        data = {'jobs': [dict(id=1, title='IT Intern', absolute_url='http://example.com/careers?gh_jid=1', location={'name': 'NYC'})]}
+        rows = sources.greenhouse(source, lambda _: json.dumps(data).encode())
+        self.assertEqual(rows[0]['url'], 'https://example.com/careers?gh_jid=1')
+
     def test_graduation_dates_are_not_internship_dates(self):
         self.assertEqual(sources.terms_for('Data Intern', 'Graduation between Fall 2027 and Summer 2028'), [])
         self.assertEqual(sources.terms_for('IT Intern 2026'), ['Unspecified season 2026'])

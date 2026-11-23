@@ -8,8 +8,10 @@ from urllib.parse import urljoin, urlsplit, urlunsplit, parse_qsl, urlencode
 
 def canonical_url(url):
     parts = urlsplit(url)
+    path_id = parts.path.rstrip('/').split('/')[-1]
     query = [(k, v) for k, v in parse_qsl(parts.query) if not k.lower().startswith('utm_')
-             and k.lower() not in ('source', 'src', 'gh_src', 'gh_jid')]
+             and k.lower() not in ('source', 'src', 'gh_src')
+             and not (k.lower() == 'gh_jid' and v == path_id)]
     return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path.rstrip('/'), urlencode(sorted(query)), ''))
 
 
@@ -53,7 +55,10 @@ def greenhouse(source, fetch):
         if not re.search(r'\b(intern\w*|co[ -]?op)\b', title, re.I):
             continue
         location = job['location']['name']
-        rows.append(normalize(source, job['id'], title, job['absolute_url'],
+        url = job['absolute_url']
+        if source.get('force_https') and url.startswith('http://'):
+            url = 'https://' + url[len('http://'):]
+        rows.append(normalize(source, job['id'], title, url,
                               [location], plain(job.get('content', ''))))
     return rows
 

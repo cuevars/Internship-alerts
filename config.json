@@ -1,11 +1,120 @@
 {
   "feed_url": "https://raw.githubusercontent.com/SimplifyJobs/Summer2027-Internships/dev/.github/scripts/listings.json",
-  "terms": ["Summer 2027"],
+  "terms": [
+    "Summer 2027"
+  ],
   "include_unspecified_employer_terms": true,
   "employer_sources": [
-    {"name": "Hershey", "type": "hershey", "company": "The Hershey Company", "url": "https://careers.thehersheycompany.com/go/Interns/9002600/", "max_pages": 20},
-    {"name": "Duolingo", "type": "greenhouse", "company": "Duolingo", "url": "https://boards-api.greenhouse.io/v1/boards/duolingo/jobs?content=true"},
-    {"name": "Viking", "type": "greenhouse", "company": "Viking Global Investors", "url": "https://boards-api.greenhouse.io/v1/boards/vikingglobalinvestors/jobs?content=true"}
+    {
+      "name": "Hershey",
+      "type": "hershey",
+      "company": "The Hershey Company",
+      "url": "https://careers.thehersheycompany.com/go/Interns/9002600/",
+      "max_pages": 20
+    },
+    {
+      "name": "Duolingo",
+      "type": "greenhouse",
+      "company": "Duolingo",
+      "url": "https://boards-api.greenhouse.io/v1/boards/duolingo/jobs?content=true"
+    },
+    {
+      "name": "Viking",
+      "type": "greenhouse",
+      "company": "Viking Global Investors",
+      "url": "https://boards-api.greenhouse.io/v1/boards/vikingglobalinvestors/jobs?content=true"
+    },
+    {
+      "name": "Datadog",
+      "company": "Datadog",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/datadog/jobs?content=true"
+    },
+    {
+      "name": "Cloudflare",
+      "company": "Cloudflare",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/cloudflare/jobs?content=true"
+    },
+    {
+      "name": "MongoDB",
+      "company": "MongoDB",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/mongodb/jobs?content=true"
+    },
+    {
+      "name": "Axonius",
+      "company": "Axonius",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/axonius/jobs?content=true"
+    },
+    {
+      "name": "Zscaler",
+      "company": "Zscaler",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/zscaler/jobs?content=true"
+    },
+    {
+      "name": "Okta",
+      "company": "Okta",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/okta/jobs?content=true"
+    },
+    {
+      "name": "Robinhood",
+      "company": "Robinhood",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/robinhood/jobs?content=true"
+    },
+    {
+      "name": "Coinbase",
+      "company": "Coinbase",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/coinbase/jobs?content=true"
+    },
+    {
+      "name": "Affirm",
+      "company": "Affirm",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/affirm/jobs?content=true"
+    },
+    {
+      "name": "Point72",
+      "company": "Point72",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/point72/jobs?content=true"
+    },
+    {
+      "name": "SeatGeek",
+      "company": "SeatGeek",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/seatgeek/jobs?content=true"
+    },
+    {
+      "name": "Zocdoc",
+      "company": "Zocdoc",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/zocdoc/jobs?content=true"
+    },
+    {
+      "name": "Yext",
+      "company": "Yext",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/yext/jobs?content=true"
+    },
+    {
+      "name": "Dropbox",
+      "company": "Dropbox",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/dropbox/jobs?content=true"
+    },
+    {
+      "name": "Squarespace",
+      "company": "Squarespace",
+      "type": "greenhouse",
+      "url": "https://boards-api.greenhouse.io/v1/boards/squarespace/jobs?content=true",
+      "force_https": true
+    }
   ],
   "include_remote": true,
   "location_pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island|Long Island|New Jersey|Pennsylvania)\\b|\\bNew York,\\s*NY\\b|,\\s*(NJ|PA)\\b",
@@ -15,13 +124,48 @@
   "scoring": {
     "minimum_score": 3,
     "rules": [
-      {"name": "Cybersecurity", "field": "title", "pattern": "\\b(cyber\\w*|security|infosec|threat|SOC)\\b", "points": 3},
-      {"name": "IT", "field": "title", "pattern": "\\b(IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|technology)\\b", "points": 2},
-      {"name": "Data", "field": "title", "pattern": "\\b(data|analyst|analytics|business intelligence|machine learning)\\b", "points": 2},
-      {"name": "Other tech", "field": "title", "pattern": "\\b(software|developer|programmer|engineering|QA|quality assurance|AI)\\b", "points": 1},
-      {"name": "NYC", "field": "locations", "pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island)\\b|\\bNew York,\\s*NY\\b", "points": 2},
-      {"name": "NJ / PA / Long Island", "field": "locations", "pattern": "\\b(New Jersey|Pennsylvania|Long Island)\\b|,\\s*(NJ|PA)\\b", "points": 1},
-      {"name": "Remote", "field": "locations", "pattern": "\\bremote\\b", "points": 1}
+      {
+        "name": "Cybersecurity",
+        "field": "title",
+        "pattern": "\\b(cyber\\w*|security|infosec|threat|SOC)\\b",
+        "points": 3
+      },
+      {
+        "name": "IT",
+        "field": "title",
+        "pattern": "\\b(IT|information technology|help ?desk|technical support|desktop support|network\\w*|systems?|cloud|devops|infrastructure|technology)\\b",
+        "points": 2
+      },
+      {
+        "name": "Data",
+        "field": "title",
+        "pattern": "\\b(data|analyst|analytics|business intelligence|machine learning)\\b",
+        "points": 2
+      },
+      {
+        "name": "Other tech",
+        "field": "title",
+        "pattern": "\\b(software|developer|programmer|engineering|QA|quality assurance|AI)\\b",
+        "points": 1
+      },
+      {
+        "name": "NYC",
+        "field": "locations",
+        "pattern": "\\b(NYC|New York City|Manhattan|Brooklyn|Queens|Bronx|Staten Island)\\b|\\bNew York,\\s*NY\\b",
+        "points": 2
+      },
+      {
+        "name": "NJ / PA / Long Island",
+        "field": "locations",
+        "pattern": "\\b(New Jersey|Pennsylvania|Long Island)\\b|,\\s*(NJ|PA)\\b",
+        "points": 1
+      },
+      {
+        "name": "Remote",
+        "field": "locations",
+        "pattern": "\\bremote\\b",
+        "points": 1
+      }
     ]
   }
 }

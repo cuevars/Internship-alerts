@@ -2,6 +2,18 @@
 
 ## Current implementation and scanning behavior
 
+### Source expansion — November 22, 2026
+
+The active list now contains **18 direct employers**, plus Simplify. Newly verified and
+enabled from the seed list: Datadog, Cloudflare, MongoDB, Axonius, Zscaler, Okta,
+Robinhood, Coinbase, Affirm, Point72, SeatGeek, Zocdoc, Yext, Dropbox and Squarespace.
+These use public employer-specific Greenhouse feeds and retain the existing location,
+term, score and exclusion filters. An employer with no matching internships is still
+monitored on future runs. Snyk, SentinelOne, Tenable and Two Sigma were checked but
+the candidate endpoints did not succeed; they remain pending, not active sources.
+The smaller original source table below documents the initial implementation;
+`config.json` and `scan-status.md` contain the current active list and its health.
+
 The sections below preserve the supplied **proposed expansion plan** and company seed list. They describe desired coverage, not sources already connected. The executable source of truth today is `config.json`; this Markdown file does not change the running script by itself.
 
 ### Does it constantly scan?

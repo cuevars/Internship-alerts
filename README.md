@@ -12,6 +12,15 @@ Phone alerts for an NYIT CS sophomore seeking Summer 2027 cybersecurity, IT, dat
 
 ## Direct employer sources
 
+Expanded November 22, 2026: **18 direct employers** are now configured. In addition to Hershey,
+Duolingo and Viking, the verified feeds include **Datadog, Cloudflare, MongoDB, Axonius,
+Zscaler, Okta, Robinhood, Coinbase, Affirm, Point72, SeatGeek, Zocdoc, Yext, Dropbox,
+and Squarespace**. They are all from the supplied company seed list. A source can have
+zero qualifying internships today and still be checked for new ones on subsequent scans.
+The verification tool `python verify_sources.py` checks its explicit candidate list without
+notifying or changing alert history; failed candidates are not automatically enabled.
+Distinct application IDs in URL queries are preserved when deduplicating job links.
+
 See [the broadened search plan](codex-internship-search-config.md) for the full supplied company seed list, proposed expansion, and an explanation of the 30-minute schedule. That document distinguishes currently connected sources from future targets; adding a company name to Markdown does not activate it.
 
 The radar now checks **The Hershey Company**, **Duolingo**, and **Viking Global Investors** directly, alongside Simplify. Hershey uses its public internship-category pages with pagination. Duolingo and Viking use their employer-specific public Greenhouse recruiting feeds. Set `enabled: false` on an `employer_sources` entry in `config.json` to disable it. To add another Greenhouse employer, supply its verified public board URL, `name`, `company`, and `type: "greenhouse"`. Other platforms need a new adapter; arbitrary career-page URLs are not supported.
