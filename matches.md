@@ -51,7 +51,6 @@ Use scan-status.md for the last check time and source health.
 | 4 | Tradeweb | [Market Data Product Management Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301932>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Data Engineer Intern - Multiple Teams](<https://eyglobal.yello.co/jobs/nuM1c7MBNjknCC8oSMvZMg?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Chicago, IL; NYC | Data |
 | 4 | Coinbase | [People Analytics Intern](<https://boards.greenhouse.io/embed/job_app?token=8175517>) | NYC | Data |
-| 4 | Schonfeld | [Data Science Intern](<https://job-boards.greenhouse.io/schonfeld/jobs/8171692>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Artificial Intelligence Intern - Tax - Tax Technology and Transformation](<https://eyglobal.yello.co/jobs/LGUG7W08QqkVXWnuqFB0TA?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Ernst &amp; Young | [Tax Technology and Transformation Products Intern - Tax](<https://eyglobal.yello.co/jobs/j21FS2VcGwQq6MZcPdNRoQ?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Universal Health Services | [Software Engineer Intern - Data Analytics](<https://jobs.uhsinc.com/jobs/367247?icims=1>) | King of Prussia, PA | Data |
