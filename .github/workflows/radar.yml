@@ -1,5 +1,13 @@
 name: Internship Radar
 on:
+  push:
+    branches: [main]
+    paths:
+      - radar.py
+      - sources.py
+      - config.json
+      - tests/**
+      - .github/workflows/radar.yml
   workflow_dispatch:
   schedule:
     - cron: '7,37 * * * *'
@@ -25,18 +33,20 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_TOKEN: ${{ secrets.NTFY_TOKEN }}
+          NTFY_SERVER: ${{ vars.NTFY_SERVER || 'https://ntfy.sh' }}
         run: python radar.py
-      - name: Save delivered IDs even after a partial notification failure
+      - name: Save scan status, shortlist and delivered IDs
         if: always() && steps.radar.outcome != 'skipped'
         run: |
-          if [ -f state.json ]; then
-            git config user.name "internship-radar[bot]"
-            git config user.email "internship-radar@users.noreply.github.com"
-            git add -f state.json
-            if ! git diff --cached --quiet; then
-              git commit -m "Update internship alert history"
-              git push
-            fi
+          git config user.name "internship-radar[bot]"
+          git config user.email "internship-radar@users.noreply.github.com"
+          for file in state.json scan-status.md matches.md; do
+            if [ -f "$file" ]; then git add -f "$file"; fi
+          done
+          if ! git diff --cached --quiet; then
+            git commit -m "Update internship scan status and alert history"
+            git pull --rebase origin "$GITHUB_REF_NAME"
+            git push origin "HEAD:$GITHUB_REF_NAME"
           fi
       - name: Upload shortlist
         if: always()

@@ -150,6 +150,55 @@ def notify(title, body, url=""):
 
 
 def run(args):
+    """Record every scheduled check, including failures and zero-new-job runs."""
+    args.scan_result = {'checked_at': datetime.now(timezone.utc).isoformat(),
+                        'status': 'running', 'sources': [], 'matches': 0,
+                        'new': 0, 'delivered': 0, 'pending': 0}
+    try:
+        _run(args)
+        args.scan_result['status'] = 'success'
+    except Exception as exc:
+        args.scan_result['status'] = 'failed'
+        args.scan_result['error'] = type(exc).__name__
+        raise
+    finally:
+        if not (args.fixture or args.list or args.dry_run or args.test_notify):
+            write_scan_status(args.scan_result, getattr(args, 'scan_status', 'scan-status.md'))
+
+
+def write_scan_status(result, path):
+    lines = ['# Latest internship scan', '',
+             f'Checked: {result["checked_at"]} (UTC)', '',
+             f'Status: **{result["status"]}**', '',
+             f'Current matches: **{result["matches"]}** · New: **{result["new"]}** · '
+             f'Alerts delivered: **{result["delivered"]}** · Pending: **{result["pending"]}**', '',
+             '## Sources', '']
+    lines.extend('- ' + status for status in result['sources'])
+    if result.get('error'):
+        lines.extend(['', f'Failure type: {result["error"]}. Check the Actions run for source status.'])
+    lines.extend(['', 'A successful scan with zero new matches does not send a phone notification.',
+                  'GitHub schedules can be delayed; this timestamp records when a scan actually ran.',
+                  '', '[Latest matching jobs](matches.md)', ''])
+    Path(path).write_text('\n'.join(lines), encoding='utf-8')
+    summary = os.environ.get('GITHUB_STEP_SUMMARY')
+    if summary:
+        with open(summary, 'a', encoding='utf-8') as stream:
+            stream.write('\n'.join(lines))
+
+
+def write_matches_markdown(rows, path):
+    def cell(value):
+        return html.escape(str(value)).replace('|', '&#124;').replace('\n', ' ')
+    lines = ['# Matching internships', '', 'Use scan-status.md for the last check time and source health.', '',
+             '| Score | Company | Role | Location | Resume |', '|---|---|---|---|---|']
+    for row in rows:
+        lines.append(f'| {row["score"]} | {cell(row["company_name"])} | '
+                     f'[{cell(row["title"])}](<{row["url"]}>) | '
+                     f'{cell("; ".join(row["locations"]))} | {cell(row["resume"])} |')
+    Path(path).write_text('\n'.join(lines) + '\n', encoding='utf-8')
+
+
+def _run(args):
     config = read_json(args.config)
     if args.test_notify:
         notify("Internship Radar test", "Your phone is connected to Internship Radar.")
@@ -161,7 +210,9 @@ def run(args):
         raw, statuses, failures = collect(config, request)
     for status in statuses:
         print(status)
+    args.scan_result['sources'] = statuses
     rows = select(raw, config) if raw else []
+    args.scan_result['matches'] = len(rows)
     for row in rows:
         print(f'Score {row["score"]} | Resume: {row["resume"]} | {row["company_name"]} | {row["title"]} | {"; ".join(row["locations"])}\n{row["url"]}')
     print(f"{len(rows)} current matches")
@@ -179,10 +230,16 @@ def run(args):
     if not isinstance(state, dict) or not isinstance(state.get("seen"), list):
         raise ValueError("Invalid state file; restore it before resuming alerts")
     seen = set(state["seen"])
+    pending = [r for r in rows if not (set(r['aliases']) & seen)
+               and 'url:' + canonical_url(r['url']) not in seen]
+    args.scan_result.update(new=len(pending), pending=len(pending))
+    if not args.fixture:
+        write_matches_markdown(rows, getattr(args, 'matches_markdown', 'matches.md'))
     if args.baseline:
         for row in rows:
             seen.update(row['aliases'])
             seen.add('url:' + canonical_url(row['url']))
+        args.scan_result['pending'] = 0
     else:
         # Send separately so every listing has its own tappable application link.
         # Persist after each successful send so a later failure retries only pending jobs.
@@ -191,12 +248,13 @@ def run(args):
         limit = int(config["max_alerts_per_run"])
         if limit < 1:
             raise ValueError("max_alerts_per_run must be positive")
-        for row in [r for r in rows if not (set(r['aliases']) & seen)
-                    and 'url:' + canonical_url(r['url']) not in seen][:limit]:
+        for row in pending[:limit]:
             notify(*notification_payload(row))
             seen.update(row['aliases'])
             seen.add('url:' + canonical_url(row['url']))
             save_state(state_path, seen)
+            args.scan_result['delivered'] += 1
+            args.scan_result['pending'] -= 1
     save_state(state_path, seen)
     if failures:
         raise RuntimeError('Some sources failed; successful sources were processed')
@@ -214,6 +272,8 @@ def main():
     parser.add_argument('--state', default='state.json')
     parser.add_argument('--report', default='matches.html')
     parser.add_argument('--fixture')
+    parser.add_argument('--scan-status', default='scan-status.md')
+    parser.add_argument('--matches-markdown', default='matches.md')
     mode = parser.add_mutually_exclusive_group()
     for flag in ['list', 'dry-run', 'baseline', 'test-notify']:
         mode.add_argument('--' + flag, action='store_true')

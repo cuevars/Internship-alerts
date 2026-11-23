@@ -1,5 +1,13 @@
 # Internship Radar
 
+**Check [latest scan status](scan-status.md) and [current matching jobs](matches.md).**
+Every scheduled run now saves its actual check time, source health, matching/new job counts,
+successful deliveries and pending alerts, including runs with no new listings. GitHub's Actions
+run summary shows the same information. No-new-job scans stay quiet on your phone.
+The requested schedule remains every 30 minutes, but GitHub may run it later; consult the
+recorded timestamp rather than the age of an alert-history commit. A custom ntfy server can
+be configured as repository variable `NTFY_SERVER`; existing secrets remain unchanged.
+
 Phone alerts for an NYIT CS sophomore seeking Summer 2027 cybersecurity, IT, data/analytics and other tech internships in NYC, New Jersey, Pennsylvania, or remote. Uses the public SimplifyJobs Summer2027 feed. No Python packages required; Python 3.11+.
 
 ## Direct employer sources
