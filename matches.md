@@ -46,6 +46,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Meta | [Data Scientist Intern - Product Analytics](<https://www.metacareers.com/jobs/1633096478817942>) | Menlo Park, CA; NYC | Data |
 | 4 | Tradeweb | [Data Management Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301946>) | NYC | Data |
 | 4 | Macy&#x27;s | [Analytics Intern - Multiple Teams](<https://ebwh.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/93389>) | NYC | Data |
+| 4 | Hudson River Trading | [Data Scientist Intern](<https://www.hudsonrivertrading.com/careers/job/?gh_jid=8257369>) | London, UK; NYC | Data |
 | 4 | New York Mets | [Data Science Intern](<https://sterlingmets.wd5.myworkdayjobs.com/Mets/job/Citi-Field--Queens-New-York/Intern--Data-Science_R1508>) | Queens, NY | Data |
 | 4 | Tradeweb | [Market Data Product Management Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301932>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Data Engineer Intern - Multiple Teams](<https://eyglobal.yello.co/jobs/nuM1c7MBNjknCC8oSMvZMg?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Chicago, IL; NYC | Data |
@@ -62,6 +63,10 @@ Use scan-status.md for the last check time and source health.
 | 4 | Citadel | [Sector Data Scientist Intern](<https://www.citadel.com/careers/details/sector-data-scientist-2027-intern-us/>) | NYC | Data |
 | 4 | American Express | [Product Management Intern - Global Merchant &amp; Network Services](<https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012152>) | NYC | IT |
 | 4 | Marshall Wace | [Technology Intern](<https://job-boards.greenhouse.io/mwinternshipprogram/jobs/8606238002>) | NYC | IT |
+| 4 | Coinbase | [Analytics Engineer Intern](<https://www.coinbase.com/careers/positions/8175471?gh_jid=8175471>) | Hybrid - New York, NY | Data |
+| 4 | Coinbase | [Forward Deployed Engineer Intern (HR Technology)](<https://www.coinbase.com/careers/positions/8175510?gh_jid=8175510>) | Hybrid - New York, NY | IT |
+| 4 | Coinbase | [Internal Audit Analytics Intern](<https://www.coinbase.com/careers/positions/8221238?gh_jid=8221238>) | Hybrid - New York, NY | Data |
+| 4 | Coinbase | [People Analytics Intern](<https://www.coinbase.com/careers/positions/8175517?gh_jid=8175517>) | Hybrid - New York, NY | Data |
 | 3 | Genentech | [AI for Drug Discovery Intern - AI for Drug Discovery - AIDD](<https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE/job/New-York-City/XMLNAME-2027-Summer-Intern---AI-for-Drug-Discovery--AIDD-_202611-129550-1>) | NYC | IT |
 | 3 | Sheetz | [Business Intelligence Analytics Intern](<https://jobs.sheetz.com/jobs/86015?icims=1&lang=en-us>) | Pittsburgh, PA | Data |
 | 3 | Environmental Defense Fund | [Consumer Energy Analytics Intern](<https://osv-edf.wd5.myworkdayjobs.com/Confidential/job/Remote---US-Home/Florida-Consumer-Energy-Analytics-Intern_REQ-002752>) | Remote in USA; St. Petersburg, FL | Data |
@@ -135,3 +140,4 @@ Use scan-status.md for the last check time and source health.
 | 3 | Palantir | [Privacy and Civil Liberties Software Engineer Intern](<https://jobs.lever.co/palantir/09846827-b931-4a9f-bd64-c3bb8860187b/apply>) | NYC | IT |
 | 3 | Salesforce | [Software Engineer Intern](<https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771-1>) | Palo Alto, CA; Seattle, WA; Indianapolis, IN; SF; NYC; Bellevue, WA; Atlanta, GA; Burlington, MA | IT |
 | 3 | Salesforce | [Software Engineer Intern](<https://salesforce.wd12.myworkdayjobs.com/Futureforce_Internships/job/California---San-Francisco/Summer-2027-Intern---Software-Engineer_JR340771>) | Palo Alto, CA; Seattle, WA; Indianapolis, IN; SF; NYC; Bellevue, WA; Atlanta, GA; Burlington, MA | IT |
+| 3 | MongoDB | [2027 - AI and People Transformation Intern, NYC](<https://www.mongodb.com/careers/job/?gh_jid=8346138>) | New York City | IT |
