@@ -97,7 +97,6 @@ Use scan-status.md for the last check time and source health.
 | 3 | Courier Health | [Software Engineer Intern](<https://job-boards.greenhouse.io/courierhealth/jobs/5258913007>) | NYC | IT |
 | 3 | Vanguard | [College to Corporate IT Intern - Application Development](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship-Application-Development--PA-_182757>) | Malvern, PA | IT |
 | 3 | Vanguard | [College to Corporate Investment Systems Intern](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship-Investment-Systems--PA-_182782>) | Malvern, PA | IT |
-| 3 | Aurora Innovation | [Hardware Systems Engineer Intern](<https://jobs.ashbyhq.com/aurora-operations-inc/f1c72f1c-8270-4526-a642-fcb61a4b4d26/application?embed=true>) | Pittsburgh, PA | IT |
 | 3 | Genesis Molecular AI | [Software Engineer Intern](<https://jobs.ashbyhq.com/genesis-molecular-ai/44e3cbdc-949c-426e-a80a-b41c73ad6a99/application?embed=true>) | San Mateo, CA; NYC | IT |
 | 3 | Rippling | [Full Stack Software Engineer Intern](<https://ats.rippling.com/rippling/jobs/f64b6158-9534-4bab-9457-45556166b262>) | Seattle, WA; SF; NYC | IT |
 | 3 | Rippling | [Software Engineer Intern - Backend Focused](<https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba>) | Seattle, WA; SF; NYC | IT |

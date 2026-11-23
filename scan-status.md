@@ -1,10 +1,10 @@
 # Latest internship scan
 
-Checked: 2026-11-23T03:52:31.995647+00:00 (UTC)
+Checked: 2026-11-23T10:38:03.151467+00:00 (UTC)
 
 Status: **success**
 
-Current matches: **137** · New: **6** · Alerts delivered: **6** · Pending: **0**
+Current matches: **136** · New: **0** · Alerts delivered: **0** · Pending: **0**
 
 ## Sources
 
@@ -20,7 +20,7 @@ Current matches: **137** · New: **6** · Alerts delivered: **6** · Pending: **
 - Okta: OK (1 listings)
 - Robinhood: OK (10 listings)
 - Coinbase: OK (32 listings)
-- Affirm: OK (15 listings)
+- Affirm: OK (12 listings)
 - Point72: OK (27 listings)
 - SeatGeek: OK (2 listings)
 - Zocdoc: OK (0 listings)
