@@ -37,8 +37,6 @@ Use scan-status.md for the last check time and source health.
 | 4 | David Yurman | [Strategic Analytics Intern](<https://davidyurman.wd1.myworkdayjobs.com/DavidYurmanCareers/job/New-York-NY/Strategic-Analytics-Intern_R-101176>) | NYC | Data |
 | 4 | Tradeweb | [Human Resources Data &amp; Analytics Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301987>) | NYC | Data |
 | 4 | Highmark Health | [Software Engineer Graduate Intern](<https://highmarkhealth.wd1.myworkdayjobs.com/highmark/job/PA-Working-at-Home---Pennsylvania/Summer-2027-Software-Engineer-enGen-Graduate-Intern_J289845>) | New Mexico; Washington; Kansas; Pennsylvania; North Dakota; Oregon; Delaware; Iowa; California; Washington, DC; Vermont; Wyoming; Connecticut; Texas; Montana; Florida; New Hampshire; Nevada; South Carolina; South Dakota; Georgia; Arizona; Mississippi; Tennessee; Virginia; Arkansas; Minnesota; Colorado; Nebraska; Rhode Island; Utah; Kentucky; West Virginia; NYC; Maryland; Hawaii; Wisconsin; Maine; Massachusetts; North Carolina; Oklahoma; Ohio; New Jersey; Indiana; Louisiana; Alaska; Michigan; Illinois; Alabama; Idaho | IT |
-| 4 | Intercontinental Exchange | [Trading System Development Intern](<https://ice.jibeapply.com/jobs/14102?icims=1>) | NYC | IT |
-| 4 | Intercontinental Exchange | [Trading System Development Intern](<https://careers-ice.icims.com/jobs/14102/job?mobile=true&needsRedirect=false>) | NYC | IT |
 | 4 | Scale AI | [Machine Learning Research Intern](<https://job-boards.greenhouse.io/scaleai/jobs/4735665005>) | SF; NYC | Data |
 | 4 | Westinghouse Electric Company | [System Test Engineering Intern](<https://careers.westinghousenuclear.com/job/Warrendale-Summer-Intern-System-Test-Engineering-OR/1433673100/?ats=successfactors>) | Warrendale, PA | IT |
 | 4 | Coinbase | [Forward Deployed Engineer Intern - HR Technology](<https://boards.greenhouse.io/embed/job_app?token=8175510>) | NYC | IT |
@@ -51,6 +49,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Tradeweb | [Market Data Product Management Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301932>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Data Engineer Intern - Multiple Teams](<https://eyglobal.yello.co/jobs/nuM1c7MBNjknCC8oSMvZMg?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Chicago, IL; NYC | Data |
 | 4 | Coinbase | [People Analytics Intern](<https://boards.greenhouse.io/embed/job_app?token=8175517>) | NYC | Data |
+| 4 | Schonfeld | [Data Science Intern](<https://job-boards.greenhouse.io/schonfeld/jobs/8171692>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Artificial Intelligence Intern - Tax - Tax Technology and Transformation](<https://eyglobal.yello.co/jobs/LGUG7W08QqkVXWnuqFB0TA?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Ernst &amp; Young | [Tax Technology and Transformation Products Intern - Tax](<https://eyglobal.yello.co/jobs/j21FS2VcGwQq6MZcPdNRoQ?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Universal Health Services | [Software Engineer Intern - Data Analytics](<https://jobs.uhsinc.com/jobs/367247?icims=1>) | King of Prussia, PA | Data |
@@ -66,6 +65,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Coinbase | [Forward Deployed Engineer Intern (HR Technology)](<https://www.coinbase.com/careers/positions/8175510?gh_jid=8175510>) | Hybrid - New York, NY | IT |
 | 4 | Coinbase | [Internal Audit Analytics Intern](<https://www.coinbase.com/careers/positions/8221238?gh_jid=8221238>) | Hybrid - New York, NY | Data |
 | 4 | Coinbase | [People Analytics Intern](<https://www.coinbase.com/careers/positions/8175517?gh_jid=8175517>) | Hybrid - New York, NY | Data |
+| 3 | Lifeway | [Summer Internship - Business Intelligence](<https://hq-lifeway.icims.com/jobs/27218/job?mobile=true&needsRedirect=false>) | Remote in USA | Data |
 | 3 | Genentech | [AI for Drug Discovery Intern - AI for Drug Discovery - AIDD](<https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE/job/New-York-City/XMLNAME-2027-Summer-Intern---AI-for-Drug-Discovery--AIDD-_202611-129550-1>) | NYC | IT |
 | 3 | Sheetz | [Business Intelligence Analytics Intern](<https://jobs.sheetz.com/jobs/86015?icims=1&lang=en-us>) | Pittsburgh, PA | Data |
 | 3 | Environmental Defense Fund | [Consumer Energy Analytics Intern](<https://osv-edf.wd5.myworkdayjobs.com/Confidential/job/Remote---US-Home/Florida-Consumer-Energy-Analytics-Intern_REQ-002752>) | Remote in USA; St. Petersburg, FL | Data |
