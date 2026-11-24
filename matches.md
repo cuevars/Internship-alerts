@@ -112,7 +112,6 @@ Use scan-status.md for the last check time and source health.
 | 3 | Two Sigma | [Software Engineering Intern - Summer 2027](<https://twosigma.avature.net/careers/JobDetail/14016>) | NYC | IT |
 | 3 | Talos | [Software Engineer Intern - RFQ](<https://jobs.ashbyhq.com/Talos-Trading/2c833180-484f-4657-80e3-f822cf1a0285/application?embed=true>) | NYC | IT |
 | 3 | Talos | [Software Engineer Intern - Dealer](<https://jobs.ashbyhq.com/Talos-Trading/91fd5274-3b6b-43cf-b366-9f6dc2ae5977/application?embed=true>) | NYC | IT |
-| 3 | Selective Insurance | [IT Information Management Intern](<https://jobs.selective.com/jobs/5777?icims=1&lang=en-us>) | Short Hills, Millburn, NJ | IT |
 | 3 | Adobe | [Software Engineer Intern](<https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Software-Engineer_R171666>) | Seattle, WA; SF; Austin, TX; San Jose, CA; Waltham, MA; NYC; Lehi, UT | IT |
 | 3 | First National Bank | [Enterprise Data Governance Intern - Data Quality and Governance](<https://fnbcorp.wd501.myworkdayjobs.com/FNBCORP/job/Pittsburgh-PA/Summer-2027-Enterprise-Data-Governance-Intern_2026-01835-1>) | Pittsburgh, PA | Data |
 | 3 | Eulerity | [Backend Developer Intern](<https://job-boards.greenhouse.io/eulerity/jobs/4709040006>) | NYC | IT |
