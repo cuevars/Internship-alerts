@@ -1,15 +1,15 @@
 # Latest internship scan
 
-Checked: 2026-11-24T18:10:31.780166+00:00 (UTC)
+Checked: 2026-11-25T02:44:13.439083+00:00 (UTC)
 
 Status: **success**
 
-Current matches: **134** · New: **0** · Alerts delivered: **0** · Pending: **0**
+Current matches: **130** · New: **0** · Alerts delivered: **0** · Pending: **0**
 
 ## Sources
 
-- Simplify: OK (17683 listings)
-- Hershey: OK (14 listings)
+- Simplify: OK (17711 listings)
+- Hershey: OK (15 listings)
 - Duolingo: OK (3 listings)
 - Viking: OK (2 listings)
 - Datadog: OK (6 listings)
@@ -18,10 +18,10 @@ Current matches: **134** · New: **0** · Alerts delivered: **0** · Pending: **
 - Axonius: OK (0 listings)
 - Zscaler: OK (0 listings)
 - Okta: OK (1 listings)
-- Robinhood: OK (10 listings)
-- Coinbase: OK (32 listings)
+- Robinhood: OK (9 listings)
+- Coinbase: OK (33 listings)
 - Affirm: OK (10 listings)
-- Point72: OK (27 listings)
+- Point72: OK (24 listings)
 - SeatGeek: OK (2 listings)
 - Zocdoc: OK (0 listings)
 - Yext: OK (0 listings)

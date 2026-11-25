@@ -38,7 +38,6 @@ Use scan-status.md for the last check time and source health.
 | 4 | Tradeweb | [Human Resources Data &amp; Analytics Intern](<https://ecnf.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/301987>) | NYC | Data |
 | 4 | Highmark Health | [Software Engineer Graduate Intern](<https://highmarkhealth.wd1.myworkdayjobs.com/highmark/job/PA-Working-at-Home---Pennsylvania/Summer-2027-Software-Engineer-enGen-Graduate-Intern_J289845>) | New Mexico; Washington; Kansas; Pennsylvania; North Dakota; Oregon; Delaware; Iowa; California; Washington, DC; Vermont; Wyoming; Connecticut; Texas; Montana; Florida; New Hampshire; Nevada; South Carolina; South Dakota; Georgia; Arizona; Mississippi; Tennessee; Virginia; Arkansas; Minnesota; Colorado; Nebraska; Rhode Island; Utah; Kentucky; West Virginia; NYC; Maryland; Hawaii; Wisconsin; Maine; Massachusetts; North Carolina; Oklahoma; Ohio; New Jersey; Indiana; Louisiana; Alaska; Michigan; Illinois; Alabama; Idaho | IT |
 | 4 | Scale AI | [Machine Learning Research Intern](<https://job-boards.greenhouse.io/scaleai/jobs/4735665005>) | SF; NYC | Data |
-| 4 | Westinghouse Electric Company | [System Test Engineering Intern](<https://careers.westinghousenuclear.com/job/Warrendale-Summer-Intern-System-Test-Engineering-OR/1433673100/?ats=successfactors>) | Warrendale, PA | IT |
 | 4 | Coinbase | [Forward Deployed Engineer Intern - HR Technology](<https://boards.greenhouse.io/embed/job_app?token=8175510>) | NYC | IT |
 | 4 | IMC Trading | [Machine Learning Engineer Intern](<https://job-boards.eu.greenhouse.io/imc/jobs/4962456101>) | NYC | Data |
 | 4 | Meta | [Data Scientist Intern - Product Analytics](<https://www.metacareers.com/jobs/1633096478817942>) | Menlo Park, CA; NYC | Data |
@@ -55,7 +54,6 @@ Use scan-status.md for the last check time and source health.
 | 4 | Universal Health Services | [Software Engineer Intern - Data Analytics](<https://jobs.uhsinc.com/jobs/367247?icims=1>) | King of Prussia, PA | Data |
 | 4 | Philips | [Data Engineering Co-op](<https://philips.wd3.myworkdayjobs.com/jobs-and-careers/job/Reedsville-Pennsylvania-United-States/Co-op-Data-Engineering-Reedsville--PA-July-December-2027_587486>) | Reedsville, PA | Data |
 | 4 | Adobe | [Machine Learning Engineer Intern](<https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Machine-Learning-Engineer_R171519>) | Seattle, WA; SF; Austin, TX; San Jose, CA; NYC; Lehi, UT | Data |
-| 4 | Springs Window Fashions | [Software Engineering Intern - Summer 2027](<https://careers-springswindowfashions.icims.com/jobs/12891/job?mobile=true&needsRedirect=false>) | Long Island City, Queens, NY | IT |
 | 4 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81241>) | Pittsburgh, PA | Data |
 | 4 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81238>) | Jersey City, NJ | Data |
 | 4 | Citadel | [Sector Data Scientist Intern](<https://www.citadel.com/careers/details/sector-data-scientist-2027-intern-us/>) | NYC | Data |
@@ -97,8 +95,6 @@ Use scan-status.md for the last check time and source health.
 | 3 | Vanguard | [College to Corporate IT Intern - Application Development](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship-Application-Development--PA-_182757>) | Malvern, PA | IT |
 | 3 | Vanguard | [College to Corporate Investment Systems Intern](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship-Investment-Systems--PA-_182782>) | Malvern, PA | IT |
 | 3 | Genesis Molecular AI | [Software Engineer Intern](<https://jobs.ashbyhq.com/genesis-molecular-ai/44e3cbdc-949c-426e-a80a-b41c73ad6a99/application?embed=true>) | San Mateo, CA; NYC | IT |
-| 3 | Rippling | [Full Stack Software Engineer Intern](<https://ats.rippling.com/rippling/jobs/f64b6158-9534-4bab-9457-45556166b262>) | Seattle, WA; SF; NYC | IT |
-| 3 | Rippling | [Software Engineer Intern - Backend Focused](<https://ats.rippling.com/rippling/jobs/a07e4e46-3721-4934-b57b-0d58412e22ba>) | Seattle, WA; SF; NYC | IT |
 | 3 | Two Sigma | [Hardware Engineering Intern](<https://twosigma.avature.net/careers/JobDetail/14289>) | NYC | IT |
 | 3 | Erie Insurance Group | [Data Intern 2](<https://jobs.erieinsurance.com/job/Erie-Intern-II-(Data)-PA-16506/1432176200/?ats=successfactors>) | Erie, PA | Data |
 | 3 | Bedrock Robotics | [Software Engineer Intern - Fleet Platform](<https://jobs.ashbyhq.com/bedrock-robotics/8927dd7e-a48d-49a2-92eb-09ec059432f4/application?embed=true>) | NYC | IT |
