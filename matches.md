@@ -23,6 +23,7 @@ Use scan-status.md for the last check time and source health.
 | 5 | Brevan Howard | [Summer Internship Program - Systematic Trading Technology Software Engineer](<https://wd3.myworkdaysite.com/recruiting/brevanhoward/BH_ExternalCareers/job/New-York/XMLNAME-2027-Summer-Internship-Program---Systematic-Trading-Technology-Software-Engineer--New-York_JR101597>) | NYC | IT |
 | 5 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81240>) | NYC | Data |
 | 5 | Vanguard | [Data Science Intern - Information Technology](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship---Data-Science--PA-_181766>) | Malvern, PA | Data |
+| 5 | Coinbase | [Security Engineer Intern](<https://www.coinbase.com/careers/positions/8415869?gh_jid=8415869>) | Hybrid - New York, NY | Cybersecurity |
 | 4 | Barry&#x27;s | [Undergraduate Summer Scholar Intern - Data Analyst](<https://ats.rippling.com/barrys-careers/jobs/1205224b-cfd0-4b9e-afc1-fc041da94c7f>) | NYC | Data |
 | 4 | iCapital Network | [Data Solutions Intern](<https://job-boards.greenhouse.io/icapitalnetwork/jobs/8945261002>) | NYC | Data |
 | 4 | Duetti | [Data Intern](<https://jobs.lever.co/duetti/9db49695-8ec8-40ad-b780-c73bb4594567/apply>) | NYC | Data |
