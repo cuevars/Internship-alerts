@@ -1,6 +1,6 @@
 # Latest internship scan
 
-Checked: 2026-11-25T02:44:13.439083+00:00 (UTC)
+Checked: 2026-11-25T12:33:46.227356+00:00 (UTC)
 
 Status: **success**
 
@@ -8,8 +8,8 @@ Current matches: **130** · New: **0** · Alerts delivered: **0** · Pending: **
 
 ## Sources
 
-- Simplify: OK (17711 listings)
-- Hershey: OK (15 listings)
+- Simplify: OK (17725 listings)
+- Hershey: OK (14 listings)
 - Duolingo: OK (3 listings)
 - Viking: OK (2 listings)
 - Datadog: OK (6 listings)
