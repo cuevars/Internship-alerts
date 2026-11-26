@@ -1,19 +1,19 @@
 # Latest internship scan
 
-Checked: 2026-11-26T04:04:07.954255+00:00 (UTC)
+Checked: 2026-11-26T13:46:20.499845+00:00 (UTC)
 
 Status: **success**
 
-Current matches: **134** · New: **2** · Alerts delivered: **2** · Pending: **0**
+Current matches: **134** · New: **0** · Alerts delivered: **0** · Pending: **0**
 
 ## Sources
 
-- Simplify: OK (17674 listings)
-- Hershey: OK (14 listings)
+- Simplify: OK (17667 listings)
+- Hershey: OK (15 listings)
 - Duolingo: OK (3 listings)
 - Viking: OK (2 listings)
 - Datadog: OK (6 listings)
-- Cloudflare: OK (10 listings)
+- Cloudflare: OK (9 listings)
 - MongoDB: OK (7 listings)
 - Axonius: OK (0 listings)
 - Zscaler: OK (0 listings)
