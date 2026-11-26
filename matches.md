@@ -11,6 +11,7 @@ Use scan-status.md for the last check time and source health.
 | 6 | Apple Bank | [IT Data Intern - Analytics, &amp; Automation](<https://applebank.wd5.myworkdayjobs.com/applebankcareers/job/New-York-NY/XMLNAME-2027-Summer-Intern--IT-Data--Analytics----Automation_2026-1414>) | NYC | Data |
 | 6 | Macy&#x27;s | [Data Systems Intern - Multiple Teams](<https://ebwh.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/93388>) | NYC | Data |
 | 6 | Ernst &amp; Young | [Data and Technology Intern - Multiple Teams](<https://eyglobal.yello.co/jobs/gqy0pJfAkXrlECgDBjqcIw?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Miami, FL; Dallas, TX; Chicago, IL; NYC | Data |
+| 5 | DriveWealth | [AI Consulting Associate Program People Analytics Intern](<https://jobs.ashbyhq.com/drivewealth/85147395-3dfa-4c16-880f-8c7522a538ec/application?embed=true>) | Chicago, IL; NYC | Data |
 | 5 | DreamWorks Animation | [Media Tech: Data – AI &amp; Machine Learning Intern](<https://jobs.smartrecruiters.com/NBCUniversal3/744000160650767>) | NYC | Data |
 | 5 | Highmark Health | [Reporting and Analytics Undergraduate Intern](<https://highmarkhealth.wd1.myworkdayjobs.com/highmark/job/PA-Working-at-Home---Pennsylvania/Summer-2027-UCD-Reporting-and-Analytics-Undergraduate-Intern_J287987>) | New Mexico; Washington; Kansas; Pennsylvania; North Dakota; Oregon; Delaware; Iowa; California; Washington, DC; Vermont; Wyoming; Connecticut; Texas; Montana; Florida; New Hampshire; Nevada; South Carolina; South Dakota; Georgia; Arizona; Mississippi; Tennessee; Virginia; Arkansas; Minnesota; Colorado; Nebraska; Rhode Island; Utah; Kentucky; West Virginia; NYC; Maryland; Hawaii; Wisconsin; Maine; Massachusetts; North Carolina; Oklahoma; Ohio; New Jersey; Indiana; Louisiana; Alaska; Michigan; Illinois; Alabama; Idaho | Data |
 | 5 | Amazon | [Software Engineer Intern - Machine Learning/Automated Reasoning](<https://amazon.jobs/en/jobs/10593521/software-development-engineer-intern-machine-learning-automated-reasoning-summer-2027>) | Boston, MA; Seattle, WA; Austin, TX; Irvine, CA; Arlington County, Arlington, VA; NYC; Bellevue, WA; Sunnyvale, CA; San Diego, CA | Data |
@@ -24,6 +25,7 @@ Use scan-status.md for the last check time and source health.
 | 5 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81240>) | NYC | Data |
 | 5 | Vanguard | [Data Science Intern - Information Technology](<https://vanguard.wd5.myworkdayjobs.com/en-US/vanguard_external/job/Malvern-PA/College-to-Corporate-IT-Internship---Data-Science--PA-_181766>) | Malvern, PA | Data |
 | 5 | Coinbase | [Security Engineer Intern](<https://www.coinbase.com/careers/positions/8415869?gh_jid=8415869>) | Hybrid - New York, NY | Cybersecurity |
+| 4 | Cantor Fitzgerald | [Technology Summer Intern - Development](<https://hdow.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1003/job/250630>) | NYC | IT |
 | 4 | Barry&#x27;s | [Undergraduate Summer Scholar Intern - Data Analyst](<https://ats.rippling.com/barrys-careers/jobs/1205224b-cfd0-4b9e-afc1-fc041da94c7f>) | NYC | Data |
 | 4 | iCapital Network | [Data Solutions Intern](<https://job-boards.greenhouse.io/icapitalnetwork/jobs/8945261002>) | NYC | Data |
 | 4 | Duetti | [Data Intern](<https://jobs.lever.co/duetti/9db49695-8ec8-40ad-b780-c73bb4594567/apply>) | NYC | Data |
@@ -50,6 +52,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Ernst &amp; Young | [Data Engineer Intern - Multiple Teams](<https://eyglobal.yello.co/jobs/nuM1c7MBNjknCC8oSMvZMg?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Chicago, IL; NYC | Data |
 | 4 | Coinbase | [People Analytics Intern](<https://boards.greenhouse.io/embed/job_app?token=8175517>) | NYC | Data |
 | 4 | Schonfeld | [Data Science Intern](<https://job-boards.greenhouse.io/schonfeld/jobs/8171692>) | NYC | Data |
+| 4 | Schonfeld | [Business Analytics Intern](<https://job-boards.greenhouse.io/schonfeld/jobs/8171703>) | NYC | Data |
 | 4 | Ernst &amp; Young | [Artificial Intelligence Intern - Tax - Tax Technology and Transformation](<https://eyglobal.yello.co/jobs/LGUG7W08QqkVXWnuqFB0TA?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Ernst &amp; Young | [Tax Technology and Transformation Products Intern - Tax](<https://eyglobal.yello.co/jobs/j21FS2VcGwQq6MZcPdNRoQ?job_board_id=c1riT--B2O-KySgYWsZO1Q>) | Dallas, TX; NYC | IT |
 | 4 | Universal Health Services | [Software Engineer Intern - Data Analytics](<https://jobs.uhsinc.com/jobs/367247?icims=1>) | King of Prussia, PA | Data |
