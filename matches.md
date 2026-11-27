@@ -31,6 +31,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Duetti | [Data Intern](<https://jobs.lever.co/duetti/9db49695-8ec8-40ad-b780-c73bb4594567/apply>) | NYC | Data |
 | 4 | Shopify | [Data Intern](<https://www.shopify.com/careers/data-internships-summer-2027_33763bbb-341b-4d78-be50-4076570e5e95>) | Montreal, QC, Canada; Toronto, ON, Canada; NYC; Ottawa, ON, Canada | Data |
 | 4 | Octaura | [Data Engineer Intern](<https://job-boards.greenhouse.io/octaura/jobs/4662934007>) | NYC | Data |
+| 4 | ICONIQ Capital | [Data &amp; Analytics Intern](<https://job-boards.greenhouse.io/iconiqhandshake/jobs/8391973>) | NYC | Data |
 | 4 | MSA Safety | [Electrical Engineering Technology Intern Co-op](<https://careers.msasafety.com/jobs/10392?icims=1&lang=en-us>) | Cranberry Township, PA | IT |
 | 4 | Addepar | [Data Engineer Intern](<https://job-boards.greenhouse.io/addepar1/jobs/8910327002>) | NYC | Data |
 | 4 | DreamWorks Animation | [Advertising &amp; Partnerships: Data Science Intern](<https://jobs.smartrecruiters.com/NBCUniversal3/744000160689930>) | NYC | Data |
@@ -67,6 +68,7 @@ Use scan-status.md for the last check time and source health.
 | 4 | Coinbase | [Forward Deployed Engineer Intern (HR Technology)](<https://www.coinbase.com/careers/positions/8175510?gh_jid=8175510>) | Hybrid - New York, NY | IT |
 | 4 | Coinbase | [Internal Audit Analytics Intern](<https://www.coinbase.com/careers/positions/8221238?gh_jid=8221238>) | Hybrid - New York, NY | Data |
 | 4 | Coinbase | [People Analytics Intern](<https://www.coinbase.com/careers/positions/8175517?gh_jid=8175517>) | Hybrid - New York, NY | Data |
+| 3 | Atoms | [Software Engineer Intern](<https://job-boards.greenhouse.io/cssmerge/jobs/8963704002>) | Seattle, WA; SF; LA; NYC; Mountain View, CA | IT |
 | 3 | Lifeway | [Summer Internship - Business Intelligence](<https://hq-lifeway.icims.com/jobs/27218/job?mobile=true&needsRedirect=false>) | Remote in USA | Data |
 | 3 | Genentech | [AI for Drug Discovery Intern - AI for Drug Discovery - AIDD](<https://roche.wd3.myworkdayjobs.com/ROG-A2O-GENE/job/New-York-City/XMLNAME-2027-Summer-Intern---AI-for-Drug-Discovery--AIDD-_202611-129550-1>) | NYC | IT |
 | 3 | Sheetz | [Business Intelligence Analytics Intern](<https://jobs.sheetz.com/jobs/86015?icims=1&lang=en-us>) | Pittsburgh, PA | Data |

@@ -1,10 +1,10 @@
 # Latest internship scan
 
-Checked: 2026-11-26T22:54:36.154837+00:00 (UTC)
+Checked: 2026-11-27T04:54:38.438166+00:00 (UTC)
 
 Status: **success**
 
-Current matches: **134** · New: **0** · Alerts delivered: **0** · Pending: **0**
+Current matches: **136** · New: **2** · Alerts delivered: **2** · Pending: **0**
 
 ## Sources
 
