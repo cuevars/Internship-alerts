@@ -61,7 +61,6 @@ Use scan-status.md for the last check time and source health.
 | 4 | Adobe | [Machine Learning Engineer Intern](<https://adobe.wd5.myworkdayjobs.com/external_experienced/job/San-Jose/XMLNAME-2027-Intern---Machine-Learning-Engineer_R171519>) | Seattle, WA; SF; Austin, TX; San Jose, CA; NYC; Lehi, UT | Data |
 | 4 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81241>) | Pittsburgh, PA | Data |
 | 4 | BNY | [Data Science Intern - Engineering](<https://eofe.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/job/81238>) | Jersey City, NJ | Data |
-| 4 | Citadel | [Sector Data Scientist Intern](<https://www.citadel.com/careers/details/sector-data-scientist-2027-intern-us/>) | NYC | Data |
 | 4 | American Express | [Product Management Intern - Global Merchant &amp; Network Services](<https://egug.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/26012152>) | NYC | IT |
 | 4 | Marshall Wace | [Technology Intern](<https://job-boards.greenhouse.io/mwinternshipprogram/jobs/8606238002>) | NYC | IT |
 | 4 | Coinbase | [Analytics Engineer Intern](<https://www.coinbase.com/careers/positions/8175471?gh_jid=8175471>) | Hybrid - New York, NY | Data |
